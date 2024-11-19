@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyMovieWatchlist")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3402b9c138c27e5a4711bd091e9f531449caf13")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyMovieWatchlist")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyMovieWatchlist")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

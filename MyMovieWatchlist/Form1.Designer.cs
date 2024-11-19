@@ -28,12 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            LstMovies = new ListBox();
+            BtnAddMovie = new Button();
+            BtnRemoveMovie = new Button();
+            BtnMarkWatched = new Button();
+            SuspendLayout();
+            // 
+            // LstMovies
+            // 
+            LstMovies.FormattingEnabled = true;
+            LstMovies.ItemHeight = 15;
+            LstMovies.Items.AddRange(new object[] { "Game Of Thrones" });
+            LstMovies.Location = new Point(12, 12);
+            LstMovies.Name = "LstMovies";
+            LstMovies.Size = new Size(640, 424);
+            LstMovies.TabIndex = 0;
+            // 
+            // BtnAddMovie
+            // 
+            BtnAddMovie.Location = new Point(658, 12);
+            BtnAddMovie.Name = "BtnAddMovie";
+            BtnAddMovie.Size = new Size(130, 39);
+            BtnAddMovie.TabIndex = 1;
+            BtnAddMovie.Text = "Add Movie";
+            BtnAddMovie.UseVisualStyleBackColor = true;
+            BtnAddMovie.Click += BtnAddMovie_Click;
+            // 
+            // BtnRemoveMovie
+            // 
+            BtnRemoveMovie.Location = new Point(658, 57);
+            BtnRemoveMovie.Name = "BtnRemoveMovie";
+            BtnRemoveMovie.Size = new Size(130, 39);
+            BtnRemoveMovie.TabIndex = 2;
+            BtnRemoveMovie.Text = "Remove Movie";
+            BtnRemoveMovie.UseVisualStyleBackColor = true;
+            // 
+            // BtnMarkWatched
+            // 
+            BtnMarkWatched.Location = new Point(658, 102);
+            BtnMarkWatched.Name = "BtnMarkWatched";
+            BtnMarkWatched.Size = new Size(130, 39);
+            BtnMarkWatched.TabIndex = 3;
+            BtnMarkWatched.Text = "Mark as Watched";
+            BtnMarkWatched.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(BtnMarkWatched);
+            Controls.Add(BtnRemoveMovie);
+            Controls.Add(BtnAddMovie);
+            Controls.Add(LstMovies);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private ListBox LstMovies;
+        private Button BtnAddMovie;
+        private Button BtnRemoveMovie;
+        private Button BtnMarkWatched;
     }
 }
